@@ -27,6 +27,17 @@ h1 {
     color: #333;
     margin: auto; 
     text-align: center;
+    
+   
+}
+p {
+    font-family: Arial, sans-serif;
+    font-size: 20px;  
+    color: #333;
+    margin: auto; 
+    text-align:left;
+    padding-top: 0px;
+    padding-bottom: 20px;
    
 }
 
@@ -34,6 +45,8 @@ h1 {
     font-family: Arial, sans-serif;
     font-size: 2.5rem;
     color: #290;
+    padding-top: 0px;
+    padding-bottom: 20px;
 }
 h4 {
     font-family: Arial, sans-serif;
@@ -47,17 +60,19 @@ ol {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.5rem;
     color: #266c76;
+    margin-left: 1.5rem
 }
 ul {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.5rem;
     color: #266c76;
+    margin-left: 1.5rem
 }
 
 
 .Header { grid-area: header; }
 .Nav { grid-area: menu; }
-.item3 { grid-area: main; }
+.Content { grid-area: main; }
 .item4 { grid-area: right; }
 .item5 { grid-area: footer; }
 
@@ -85,4 +100,25 @@ ul.no-bullets {
     margin-left: 2rem;
     padding: 0;
     text-align: left;
+    font-family: fantasy;
+    font-size: 40px;
   }
+
+  @keyframes colourChanging {
+    0% {color: black; }
+    25% {color: rgb(152, 130, 4); }
+    50% {color: rgb(235, 243, 5); }
+    100% {color: rgb(101, 101, 1); }
+  }
+
+  .colourChangeText{ animation-name: colourChanging;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+   }
+
+   .roundedButton{
+    border-radius: 50px;
+    block-size: 100px;
+    text-align: center;
+   }
