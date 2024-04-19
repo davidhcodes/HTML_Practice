@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(245, 235, 235);
+    margin: 2rem 4rem
+
+}
+img {
+    border: 0rm solid #555;
+
+    width : 30rem;
+    margin: 0rem;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+    padding: 2rem;
+    padding-left: 22rem;
+    padding-bottom:0rem;
+    padding-top: 0rem;
+    padding-right: 0rem;
+  
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 5rem;  
+    color: #333;
+    margin: auto; 
+    text-align: center;
+   
+}
+
+ h2 {
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+    color: #290;
+}
+h4 {
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+    color: #290;
+    text-align: left;
+    margin-left: 1.5rem;
+}
+
+ol {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: #266c76;
+}
+ul {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: #266c76;
+}
+
+
+.Header { grid-area: header; }
+.Nav { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 50px;
+  background-color: #feffff;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 2rem;
+    padding: 0;
+    text-align: left;
+  }
